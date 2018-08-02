@@ -5,13 +5,19 @@
 			<i class="fa fa-inr" style="font-size:48px;color:red">{{ total }}</i>
 		</div>
 		<div class="col-md-10" align="center">
-			<form method="post">
+			<form method="post">{% csrf_token %}
 				<h3 >Track</h3>
 				<span><label for="from-date">from</label>
-					<input type="date" name="from-date" id="from-date" style="color: black">
-				</span>
+					<input type="date" name="from-date" id="from-date" style="color: black" value="{{ context.start_date }}" required>
+				
 				<label>to</label>
-				<input type="date" name="from-date" id="from-date" style="color: black">
+				<input type="date" name="to-date" id="to-date" style="color: black" value="{{ context.to_date }}" required>
+				<button type="submit" class="btn btn-info">Track</button>
+				</span>
+				<span>
+				<h4>Your Expense</h4>
+				<i class="fa fa-inr" style="font-size:28px;color:yellow">{{ selected_spent }}</i>
+			</span>
 			</form>
 		</div>
 	</div>

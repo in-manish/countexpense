@@ -8,10 +8,12 @@
 				{% render_field form.payment_method class="form-control" %}
 				{{ form.description.label_tag }}
 				{% render_field form.description class="form-control" placeholder="Enter Description" %}
+				<span>
 				{{ form.amount.label_tag }}
-				{% render_field form.amount class="form-control" placeholder="Enter amount" %}
+				{% render_field form.amount class="form-control" placeholder="Enter amount" style="width:100px;" %}
 				{{ form.share.label_tag }}
-				{% render_field form.share class="form-control"  placeholder="you + otheres" %}
+				{% render_field form.share class="form-control"  placeholder="you + otheres" style="width:100px;" %}
+				</span>
 				<label>Date:</label>
 				{% render_field form.expense_time class="form-control" %}
 				{{ form.category.label_tag }}
