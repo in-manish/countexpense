@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div class="row">
+		<label class="text-muted">spends</label>
+		<div class="col-md-12">
+			<ul class="list-group">
+				{% for cost in detail %}
+				<li class="list-group-item">
+						<label>Payment Method: </label>{{ cost.payment_method }}<br>
+						<label>Amount:</label>{{ cost.amount }}<br>
+						<label>Time:</label>{{ cost.expense_time }}<br>
+						<label>Category:</label>{{ cost.category }}<br>
+					<label>Description:</label>
+					{{ cost.description }}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

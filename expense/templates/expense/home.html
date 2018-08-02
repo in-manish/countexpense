@@ -1,0 +1,32 @@
+<!-- import  statement-->
+{% extends 'expense/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-primary" id="main-container">
+					<div class="panel-heading" style="background: blue;color: white;height: 200px;">
+						{% include "expense/homeComponent/container-head.html" %}
+					</div>
+					<div class="panel-body" id="main-container-body">
+						{% include "expense/homeComponent/container-body.html" %}
+					</div>
+					<div class="panel-footer" style="background-color: transparent;">
+						{% include "expense/homeComponent/container-footer.html" %}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+{% endblock %}

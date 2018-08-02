@@ -1,0 +1,21 @@
+{% load widget_tweaks %}
+<div class="container-fluid">
+	<div class="row">
+		<label class="text-muted">spends</label>
+		<div class="col-md-12">
+			<div class="form-group">
+				{{ form.payment_method.label_tag }}
+				{% render_field form.payment_method class="form-control" %}
+				{{ form.description.label_tag }}
+				{% render_field form.description class="form-control" %}
+				{{ form.amount.label_tag }}
+				{% render_field form.amount class="form-control" %}
+				{{ form.expense_time.label_tag }}
+				{% render_field form.expense_time class="form-control" %}
+				{{ form.category }}
+				{% render_field form.category class='from-control' %}
+				<!-- {{ form.expense_time }} -->
+			</div>
+		</div>
+	</div>
+</div>
