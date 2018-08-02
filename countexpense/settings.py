@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'expense',
     'widget_tweaks',
+    'datetimepicker',
 ]
 
 MIDDLEWARE = [
