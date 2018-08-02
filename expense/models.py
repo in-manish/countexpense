@@ -11,7 +11,8 @@ class ExpenseModel(models.Model):
 
 	payment_method = models.CharField(max_length = 50, choices = PAYMENT_METHOD, default = 'CASH')
 	description = models.CharField( max_length = 400)
-	amount = models.IntegerField()
+	amount = models.IntegerField(default=0)
+	share = models.IntegerField(default=0)
 	expense_time = models.DateTimeField(blank=True)
 	CATEGORY_SPENT_FOR = (
 			('FOOD', 'FOOD & DRINK'),

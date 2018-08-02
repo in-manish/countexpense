@@ -2,7 +2,7 @@
 	<div class="row">
 		<label class="text-muted">spends</label>
 		<div class="col-md-12">
-			<ul class="list-group">
+			<ul class="list-group" id="list-group" style="overflow-y: scroll;-webkit-overflow-scrolling: touch;height: 350px;">
 				{% for cost in detail %}
 				<li class="list-group-item">
 						<label>Payment Method: </label>{{ cost.payment_method }}<br>

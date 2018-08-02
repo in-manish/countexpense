@@ -11,7 +11,6 @@ def home(request):
 	total=0
 	for cost in detail:
 		total += cost.amount
-
 	return render(request, 'expense/home.html', {'detail': detail, 'total': total })
 
 

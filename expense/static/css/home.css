@@ -5,3 +5,7 @@
 #main-container-body{
 	height: 400px;
 }
+
+#list-group::webkit-scrollbar{
+	overflow-y: scroll;
+}

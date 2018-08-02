@@ -6,5 +6,5 @@ class AddNewExpenseForm(forms.ModelForm):
 	expense_time = forms.DateField(widget=forms.DateInput())
 	class Meta:
 		model = ExpenseModel
-		fields = ['payment_method', 'description', 'amount', 'expense_time', 'category' ]
+		fields = ['payment_method', 'description', 'amount','share', 'expense_time', 'category' ]
 	
